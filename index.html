@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iberian Horizons</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel controls">
+        <h1>Iberian Horizons</h1>
+        <p class="tagline">Guide a civilization from Iberia into the Atlantic world.</p>
+
+        <div class="stats-grid" id="stats"></div>
+
+        <div class="actions">
+          <button id="gatherBtn">Gather Goods</button>
+          <button id="buildBtn">Build Infrastructure</button>
+          <button id="trainBtn">Train Army</button>
+          <button id="battleBtn">Battle Rival Kingdom</button>
+          <button id="exploreBtn">Explore Atlantic Routes</button>
+          <button id="colonizeBtn" disabled>Unlock the Americas</button>
+          <button id="resetBtn" class="secondary">Reset Campaign</button>
+        </div>
+
+        <div class="log-wrap">
+          <h2>Chronicle</h2>
+          <ul id="log"></ul>
+        </div>
+      </section>
+
+      <section class="panel world">
+        <canvas id="mapCanvas" width="900" height="540" aria-label="Game map"></canvas>
+        <div class="legend">
+          <span><i class="swatch iberia"></i>Iberia</span>
+          <span><i class="swatch atlantic"></i>Atlantic</span>
+          <span><i class="swatch americas"></i>Americas</span>
+          <span><i class="swatch fleet"></i>Fleet Route</span>
+          <span><i class="swatch army"></i>Army Strength</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
